@@ -13,7 +13,7 @@ const ProjectListScreen = () => {
   });
   const [list, setList] = useState([]);
   const [users, setUsers] = useState([]);
-  const debouncedParam = useDebounce(params, 2000);
+  const debouncedParam = useDebounce(params, 200);
 
   useEffect(() => {
     fetch(
